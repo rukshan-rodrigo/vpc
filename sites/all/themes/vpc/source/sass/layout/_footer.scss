@@ -1,0 +1,21 @@
+.footer {
+  padding: rem-calc(30) 0;
+  color: #fff;
+  background: #2e2e2e;
+  a {
+    color: #fff;
+    &:hover {
+      color: #ff2626;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 -5px;
+    > li {
+      display: inline-block;
+      margin: 0 7px;
+    }
+  }
+}
+

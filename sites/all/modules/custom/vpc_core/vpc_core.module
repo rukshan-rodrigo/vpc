@@ -1,0 +1,518 @@
+
+<?php
+
+
+/**
+ * Implements hook_block_info().
+ */
+function vpc_core_block_info() {
+  $blocks = array();
+  $blocks['vpc_home_content_block'] = array(
+    'info' => t('Home page content block'),
+    'cache' => 'DRUPAL_CACHE_GLOBAL',
+  );
+
+  return $blocks;
+}
+
+
+
+/**
+ * Get default block markup.
+ *
+ * @return string
+ */
+function vpc_home_content_block_default() {
+  return <<<"__END_OF_MARKUP__"
+     <section id="main-slider">
+        <div class="owl-carousel">
+            <div class="item" style="background-image: url(/sites/all/themes/vpc/images/slider/bg1.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="carousel-content">
+                                    <h2><span>24/7 property maintenance service</span> </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+             <div class="item" style="background-image: url(/sites/all/themes/vpc/images/slider/bg2.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="carousel-content">
+                                    <h2><span>All trades one call away</span> </h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                        <div class="item" style="background-image: url(/sites/all/themes/vpc/images/slider/bg3.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content">
+                                    <h2><span>Qualified & Friendly Tradesmen</span> </h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+             <div class="item" style="background-image: url(/sites/all/themes/vpc/images/slider/bg4.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content">
+                                    <h2><span>Satisfaction Guarantee</span> </h2>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(/sites/all/themes/vpc/images/slider/bg5.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content">
+                                    <h2><span>Best value for money </span> </h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--/.item-->
+        </div><!--/.owl-carousel-->
+    </section><!--/#main-slider-->
+
+    <section id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">About Us</h2>
+                <p class="text-center wow fadeInDown">Victorian Property Care is a 24/7 property maintenance company.<br> One phone call to us will take care of all of your property maintenance and improvement needs.<br> We provide a wide range of affordable, high quality property maintenance services for all kinds of properties throughout Victoria.<br><br>
+Our tradesmen are of the highest quality, and fully qualified and experienced in their field.
+</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 wow fadeInLeft">
+                    <img class="img-responsive" src="/sites/all/themes/vpc/images/main-feature.jpg" alt="">
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section id="cta2">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>24/7</span> PROPERTY MAINTENANCE</h2>
+                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Call us or e-mail us for a free quote</p>
+                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms"><a class="btn btn-primary btn-lg" href="#get-in-touch">CONTACT US</a></p>
+                <img class="img-responsive wow fadeIn" src="/sites/all/themes/vpc/images/cta2/cta2-img.png" alt="" data-wow-duration="300ms" data-wow-delay="300ms">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" >
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Our Services</h2>
+                <p class="text-center wow fadeInDown">We provide a wide range of affordable, high quality property maintenance services for all kinds of properties throughout Victoria.</p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="media-body">
+                                <h4 class="media-heading">Air Conditioning</h4>
+                                <!--<p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>-->
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="media-body">
+                                <h4 class="media-heading">Antennas</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Carpet Cleaning</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Clothes Lines</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Curtains & Blinds</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Ducted Vacuum Systems</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Electricians </h4>
+                                <!--<p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>-->
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Fences</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Gardening</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Lawn Mowing</h4>
+
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Handymen</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Heating</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Home Cleaning </h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Landscaping</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Locksmith </h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Painting</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Pest Control</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Plumbing</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Removals</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Renovating</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Tree Lopping</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+
+                            <div class="media-body">
+                                <h4 class="media-heading">Window Cleaning</h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+
+                </div>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+
+
+    <section id="testimonial">
+        <div class="container">
+
+
+        <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown" style="color: #FFFFFF">Testimonials</h2>
+                <p class="text-center wow fadeInDown">Here’s what our clients say about our service</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+
+
+
+                    <div id="carousel-testimonial" class="carousel slide text-center" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="RR: box">
+                            <div class="item active">
+
+                                <h4>Peter C</h4>
+                              <small>Pakenham</small>
+                                <p>I have used Victorian Property Care for all of my maintenance issues. I can only say that they are reliable, efficient and always come within budget.</p>
+                            </div>
+                            <div class="item">
+                                <h4>Sophie</h4>
+                                <small>Dandenong</small>
+                                <p>Very professional services, staff are very efficient and helpful, and always tried to solve the problem as soon as they can. Definitely a trustworthy service to recommend!</p>
+                            </div>
+                               <div class="item">
+                                <h4>Jon</h4>
+                                <small>Berwick</small>
+                                <p>We had a great job done on our garden, on time and on price (even though there was extra work) and just as we wanted it. I wouldn’t hesitate to use VPC for more work or recommend to anyone.</p>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="btns">
+                            <a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button" data-slide="prev">
+                                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button" data-slide="next">
+                                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#testimonial-->
+
+
+
+    <section id="get-in-touch">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Contact US</h2>
+                <p class="text-center wow fadeInDown">Get in touch with us for a fast, friendly, efficient, affordable and professional service.</p>
+            </div>
+        </div>
+    </section><!--/#get-in-touch-->
+
+
+    <section id="contact">
+    <img class="img-responsive wow fadeIn" src="/sites/all/themes/vpc/images/cta2/cta3-bg.jpg" alt="" data-wow-duration="300ms" data-wow-delay="300ms">
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-8 col-lg-6 col-lg-offset-3 col-md-offset-4">
+                        <div class="contact-form">
+                            <h3>Contact Info</h3>
+
+                            <address>
+                              <strong>Victorian Property Care Pty Ltd</strong><br>
+                              Phone: 045 691 6000<br>
+                              Email: <a href="mailto:enquires@victorianpropertycare.com.au">Email us</a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#bottom-->
+__END_OF_MARKUP__;
+}
+
+
+
+/**
+ * Implements hook_block_configure().
+ */
+function vpc_core_block_configure($delta = '') {
+  $form = array();
+
+  switch($delta) {
+    case 'vpc_home_content_block':
+      $default_contact_block_markup = vpc_home_content_block_default();
+      // Text field form element
+      $form['text_body'] = array(
+        '#type' => 'text_format',
+        '#title' => t('Enter your text here in WYSIWYG format'),
+        '#default_value' => variable_get('vpc_home_text', $default_contact_block_markup),
+      );
+      break;
+    
+  }
+  return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ */
+function vpc_core_block_save($delta = '', $edit = array()) {
+  switch($delta) {
+    case 'vpc_home_content_block' :
+      // Saving the WYSIWYG text
+      variable_set('vpc_home_text', $edit['text_body']['value']);
+      break;   
+  }
+}
+/**
+ * Implements hook_block_view().
+ */
+function vpc_core_block_view($delta = '') {
+  $block = array();
+
+  switch($delta) {
+    case 'vpc_home_content_block' :
+      $block['content'] = vpc_home_content_block_view();
+      break;
+
+    case 'vpc_sidebar_contact_block' :
+      $block['content'] = vpc_sidebar_contact_block_view();
+      break;
+
+    case 'vpc_social_sharing_block' :
+      $block['content'] = vpc_social_sharing_block_view();
+      break;
+
+    case 'vpc_heart_place_block' :
+      $block['content'] = vpc_heart_place_block_view();
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Custom function to assemble renderable array for block content.
+ * Returns a renderable array with the block content.
+ * @return array
+ *   Renderable array of block content.
+ */
+function vpc_home_content_block_view() {
+  // Capture WYSIWYG text from the variable
+  $text = variable_get('vpc_home_text', '');
+
+  // Block output in HTML with div wrapper
+  $block = array(
+    'message' => array(
+      '#type' => 'markup',
+      '#markup' => $text,
+      '#suffix' => '',
+    ),
+  );
+
+  return $block;
+}
+

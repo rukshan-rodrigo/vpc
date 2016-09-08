@@ -1,0 +1,18 @@
+.logged-in {
+  .secondary {
+    li:nth-child(2) {
+      display: none;
+    }
+  }
+  .main-container {
+    padding-bottom: 80px;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+.profile {
+
+}

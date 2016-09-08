@@ -1,0 +1,5 @@
+name = VPC Core
+description = Core functions needs to build VPC theme
+core = 7.x
+package = VPC
+dependencies[] = ctools

@@ -1,0 +1,96 @@
+.navbar.navbar-default {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  .navbar-toggle {
+    margin-top: 32px;
+  }
+  .navbar-brand {
+    height: auto;
+    padding: 22px 15px 21px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbar-default {
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    .navbar-nav {
+      >li {
+        >a {
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+        &:hover {
+          >a {
+            background: transparent;
+            padding-top: 37px;
+            border-top: 3px solid #ff2626;
+          }
+        }
+      }
+      >li.active {
+        >a {
+          background: transparent;
+          padding-top: 37px;
+          border-top: 3px solid #ff2626;
+        }
+      }
+      >li.open {
+        >a {
+          background: transparent;
+          padding-top: 37px;
+          border-top: 3px solid #ff2626;
+        }
+      }
+    }
+    .dropdown-menu {
+      padding: 0 20px;
+      min-width: 220px;
+      background-color: rgba(26, 28, 40, 0.9);
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      background-clip: inherit;
+      >li {
+        border-left: 3px solid transparent;
+        margin-left: -20px;
+        padding-left: 17px;
+        -webit-transition: border-color 400ms;
+        transition: border-color 400ms;
+        >a {
+          border-top: 1px solid #404455;
+          padding: 15px 0;
+          color: #eeeeee;
+        }
+        &:first-child {
+          >a {
+            border-top: 0;
+          }
+        }
+        &:hover {
+          border-left-color: #ff2626;
+          >a {
+            color: #ff2626;
+            background-color: transparent;
+          }
+        }
+      }
+      >li.active {
+        border-left-color: #ff2626;
+        >a {
+          color: #ff2626;
+          background-color: transparent;
+        }
+      }
+      >li.open {
+        border-left-color: #ff2626;
+        >a {
+          color: #ff2626;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

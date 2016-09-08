@@ -1,0 +1,73 @@
+<?php
+
+
+/**
+ * Implements hook_menu().
+ */
+function vpc_quote_form_menu() {
+  $items['quote-form'] = array(
+    'title' => 'Quote Form',
+    'page callback' => 'quote_form_render',
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+/**
+ * Custom callback function.
+ */
+function quote_form_render() {
+  $content['intro'] = array(
+    '#type' => 'markup',
+    '#markup' => '<p>Please add the Quote for this job</p>',
+  );
+
+  $job_id = drupal_get_query_parameters();
+
+  if (!empty($job_id)) {
+    $job = $job_id['job'];
+  }
+
+  global $user;
+  module_load_include('inc', 'node', 'node.pages');
+  $node = (object) array(
+    'uid' => $user->uid,
+    'name' => (isset($user->name) ? $user->name : ''),
+    'type' => 'quote',
+    'language' => LANGUAGE_NONE,
+  );
+  $form = drupal_get_form('quote_node_form', $node);
+  $content['form_markup'] = $form;
+
+  return $content;
+}
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function vpc_quote_form_form_quote_node_form_alter(&$form, $form_state, $form_id) {
+  //dpm($form);
+//  $form['title'] = array(
+//    '#type' //=> 'textfield',
+//    '#title' => 'Title',
+//    '#default_value' => t("I agree with the website's terms and conditions.")
+//  );
+  //$form['#after_build'][] = 'vpc_quote_form_after_build';
+
+}
+
+/**
+ * Populate node reference field
+ */
+function vpc_quote_form_after_build($form, &$form_state) {
+
+//  dpm($form);
+//  // Obtain node object from nid in url
+//  //$node_reference_field_name = node_load(arg(1));
+//  //populate autocomplete node reference field with node title. Name of CCK field is field_[cck_field_name].
+//  $form['field_inquiry_reference']['und'drush en entityreference_prepopulate
+//  ]['nid']['nid']['#value'] = $node_reference_field_name->title;
+//
+//  return $form;
+}
